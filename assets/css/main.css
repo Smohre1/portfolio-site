@@ -2692,7 +2692,7 @@ input, select, textarea {
 	}
 
 	.image-text {
-    background: rgba(127, 127, 127, 0.801);
+    background: rgba(127, 127, 127, 0.875);
     padding: 50px 20px;
     border-radius: 8px;
 	}
@@ -2844,6 +2844,53 @@ input, select, textarea {
 .download-button:hover {
     background-color: #444;
 }
+
+.contact-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* Base button style */
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    background-color: #3c3c3c;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+    transform: translateY(0);
+}
+
+/* Hover animation */
+.contact-button:hover {
+    background-color: #7e7e7e;
+    transform: translateY(-3px);
+}
+
+/* Icon animation */
+.contact-button i {
+    transition: transform 0.2s ease;
+}
+
+/* Icon wiggle on hover */
+.contact-button:hover i {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+
+
 
 
 

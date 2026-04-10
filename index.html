@@ -49,10 +49,20 @@
 							<img src="images/gallery/art/Self_Portrait.jpg" alt="" />
                             <div class="image-text">
 							    <h2>Contact</h2>
-                                <h3>
-                                    <a href="mailto:smohre3@gmail.com" class="icon style2 fa-envelope"><br>smohre3@gmail.com</a>
-                                </h3>
-                                
+								<div class="contact-buttons">
+
+									<a id="copyEmailBtn" class="contact-button">
+										<i class="fa-solid fa-envelope"></i>
+										Copy Email
+									</a>
+
+									<a class="contact-button" 
+										href="https://www.linkedin.com/in/stevenmohre-compsci"  target="_blank">
+										<i class="fa-brands fa-linkedin"></i>
+										LinkedIn
+									</a>
+
+								</div>
 						    </div>
 						</div>
 					</section>
@@ -305,6 +315,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<script>
+		const email = "smohre3@gmail.com";
+
+		const btn = document.getElementById("copyEmailBtn");
+
+		btn.addEventListener("click", async function () {
+			try {
+			await navigator.clipboard.writeText(email);
+
+			const original = this.innerHTML;
+			this.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+
+			setTimeout(() => {
+				this.innerHTML = original;
+			}, 1500);
+
+			} catch (err) {
+			this.innerHTML = '<i class="fa-solid fa-xmark"></i> Failed';
+			setTimeout(() => {
+				this.innerHTML = '<i class="fa-solid fa-envelope"></i> Copy Email';
+			}, 1500);
+			}
+		});
+		</script>	
 
 	</body>
 </html>
