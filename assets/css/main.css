@@ -2828,6 +2828,22 @@ input, select, textarea {
     text-decoration: none;
 }
 
+.download-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 16px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #444;
+}
 
 
 
