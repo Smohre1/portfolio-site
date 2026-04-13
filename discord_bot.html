@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Steven Portfolio</title>
 		<meta charset="utf-8" />
@@ -9,31 +9,38 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	</head>
 
-	<header class="nav-container">
-
-		<a class="nav-button" href="index.html">Home</a>
-
-		<a class="nav-button" href="index.html#Projects">Projects</a>
-
-		<div class="dropdown">
-			<a class="nav-button dropbtn">Private Projects ▼</a>
-
-			<div class="dropdown-content">
-				<a href="discord_bot.html">Discord Bot</a>
-				<a href="ai_sorting.html">AI Sorting Game</a>
-			</div>
-		</div>
-
-		<a class="nav-button" href="resume.html">Resume</a>
-
-		<a class="nav-button" href="art.html">Art</a>
-
-	</header>
 	<body class="is-preload">
+		<header class="nav-container">
+
+			<a class="nav-button" href="index.html">Home</a>
+
+			<a class="nav-button" href="index.html#Projects">Projects</a>
+
+			<div class="dropdown">
+				<a class="nav-button dropbtn">Private Projects ▼</a>
+
+				<div class="dropdown-content">
+					<a href="discord_bot.html">Discord Bot</a>
+					<a href="ai_sorting.html">AI Sorting Game</a>
+				</div>
+			</div>
+
+			<a class="nav-button" href="resume.html">Resume</a>
+
+			<a class="nav-button" href="art.html">Art</a>
+
+		</header>
+
 		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
 				<h1>Discord Bot</h1>
-				<p class="major">This is a private passion project that has many different uses. It has games, computer functions, mod controls, ability to send messages, and control a secret santa for the server.</p>
+				<p class="major">
+					This is a private passion project that I work on in my free time. 
+					A multi-feature Discord bot built in Python using discord.py that includes interactive games, 
+					moderation utilities, automated messaging tools, and a Secret Santa coordination system. 
+					The project focuses on command handling architecture, persistent data storage using text-based databases, 
+					and building interactive server utilities for real-world community use.
+				</p>
 			</div>
 			<div class="image">
 				<img src="images/gallery/art/Worlde_Bot_3.png" alt="" />
@@ -43,7 +50,7 @@
 		<section class="wrapper style1 align-center">
 			<div class="inner">
 				<h2>Bot Actions</h2>
-				<p>This section showcases some of the bots commands and functions.</p>
+				<p>This section showcases some of the bot's commands and functions.</p>
 				<div class="items style1 medium onscroll-fade-in">
 					<section>
 						<span class="icon solid style2 major fa-message"></span>
@@ -55,7 +62,7 @@
 							Roll a Die (d4 - d%)
 						</p>
 						<h4><u>Currently Exploring</u></h4>
-						<p>Todays Holidays</p>
+						<p>Today's Holidays</p>
 					</section>
 					<section>
 						<span class="icon solid style2 major fa-pen"></span>
@@ -70,8 +77,8 @@
 						<h3>Secret Santa</h3>
 						<p>
 							Allows users to DM the bot to submit three ideas for gifts,<br>
-							Stores all responses into a .txt file,<br>
-							Stores everyones names (the ones who joined) into a seperate .txt file,<br>
+							Stores responses in structured text files,<br>
+							Stores everyone's names (the ones who joined) into a separate text file,<br>
 							Has a mod command that sends everyone their secret santa (does not allow a user to get themselves)
 						</p>
 					</section>
@@ -95,15 +102,31 @@
 							Can add and subtract coins from a specific user
 						</p>
 					</section>
+					<section>
+						<span class="icon solid style2 major fa-laptop"></span>
+						<h3>Technical Details</h3>
+						<p>
+							Built using Python and discord.py with modular command handlers,<br>
+							Data persistence handled through structured text storage,<br>
+							Implements user-state tracking, randomized assignment logic,<br>
+							Permission-restricted moderator commands<br>
+						</p>
+					</section>	
 				</div>
 			</div>
 		</section>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<p>&copy; 2026 Steven Mohre. Template by: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer>
+	<script src="assets/js/jquery.min.js" defer></script>
+	<script src="assets/js/jquery.scrollex.min.js" defer></script>
+	<script src="assets/js/jquery.scrolly.min.js" defer></script>
+	<script src="assets/js/browser.min.js" defer></script>
+	<script src="assets/js/breakpoints.min.js" defer></script>
+	<script src="assets/js/util.js" defer></script>
+	<script src="assets/js/main.js" defer></script>
 	</body>
 </html>

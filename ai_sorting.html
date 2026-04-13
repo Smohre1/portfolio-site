@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Steven Portfolio</title>
 		<meta charset="utf-8" />
@@ -8,43 +8,82 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	</head>
-	<header class="nav-container">
 
-		<a class="nav-button" href="index.html">Home</a>
-
-		<a class="nav-button" href="index.html#Projects">Projects</a>
-
-		<div class="dropdown">
-			<a class="nav-button dropbtn">Private Projects ▼</a>
-
-			<div class="dropdown-content">
-				<a href="discord_bot.html">Discord Bot</a>
-				<a href="ai_sorting.html">AI Sorting Game</a>
-			</div>
-		</div>
-
-		<a class="nav-button" href="resume.html">Resume</a>
-
-		<a class="nav-button" href="art.html">Art</a>
-
-	</header>
 	<body class="is-preload">
-				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+		<header class="nav-container">
+
+			<a class="nav-button" href="index.html">Home</a>
+
+			<a class="nav-button" href="index.html#Projects">Projects</a>
+
+			<div class="dropdown">
+				<a class="nav-button dropbtn">Private Projects ▼</a>
+
+				<div class="dropdown-content">
+					<a href="discord_bot.html">Discord Bot</a>
+					<a href="ai_sorting.html">AI Sorting Game</a>
+				</div>
+			</div>
+
+			<a class="nav-button" href="resume.html">Resume</a>
+
+			<a class="nav-button" href="art.html">Art</a>
+
+		</header>
+
+		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
 				<h1>AI Sorting Game</h1>
-				<p class="major">This is a private capstone project. I wanted to put it on Itch along with my other games, but the size is too big due to the MLAgents package. This capstone project was created to use both of my track skills, AI and Game Design, in one large project. I created a simple ball sorting game and a simple AI, using reinforcement learning, to teach the AI how to play the game. The AI strated out with one colored ball, and once it learned that sufficiently, I would add another color to the game.</p>
+				<p class="major">This capstone project combines my Artificial Intelligence and 
+					Game Design track experience into a single Unity-based reinforcement learning system using ML-Agents. 
+					I developed a ball sorting environment and trained an AI agent to 
+					classify objects by color using reward-based learning. 
+					Training began with a single object class and progressively scaled to multiple classes 
+					as performance stabilized. The project demonstrates environment design for reinforcement learning, 
+					curriculum-style training progression, 
+					and integration of machine learning agents into interactive gameplay systems.
+				</p>
 			</div>
 			<div class="image">
 				<img src="images/gallery/art/Capstone_02.png" alt="" />
 			</div>
 		</section>
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<section class="wrapper style1 align-center">
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<h3>Technical Details</h3>
+						<p>
+						Built in Unity using ML-Agents and C#,<br>
+						Designed a reinforcement learning environment with reward shaping and progressive difficulty scaling,<br>
+						Implemented curriculum-style training by increasing object variety after convergence at earlier stages.
+						</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-message"></span>
+						<h3>Skills Demonstrated</h3>
+
+						Reinforcement learning environment design,<br>
+						Curriculum training strategy,<br>
+						Unity ML-Agents integration,<br>
+						Agent reward shaping,<br>
+						Simulation-based AI training workflows
+					</section>
+			</div>
+		</section>
+		
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<p>&copy; 2026 Steven Mohre. Template by: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js" defer></script>
+		<script src="assets/js/jquery.scrollex.min.js" defer></script>
+		<script src="assets/js/jquery.scrolly.min.js" defer></script>
+		<script src="assets/js/browser.min.js" defer></script>
+		<script src="assets/js/breakpoints.min.js" defer></script>
+		<script src="assets/js/util.js" defer></script>
+		<script src="assets/js/main.js" defer></script>
 	</body>
 </html>
